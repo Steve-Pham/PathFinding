@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Path Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/public/style.css">
+</head>
+	<body>
+		<div class="navbardiv">
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#">PathFinding Visualization!</a>
+			    </div>
+
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav">
+						<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The Algorithms! <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li id="start-DFS"><a href="#">Depth-First Search</a></li>	
+							<li id="start-BFS"><a href="#">Breadth-First Search</a></li>	
+							<li id="start-Djikstra's"><a href="#">Djikstra's</a></li>	
+						</ul>
+						</li>
+					</ul> 
+					<ul class="nav navbar-nav navbar-right">
+						<li class="mybuttons ">
+							<button id="search" type="button" class="btn btn-primary navbar-btn">Search!</button>
+							<button id="reset" type="button" class="btn btn-danger navbar-btn">Clear!</button>
+						</li>
+					</ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
+		<div class="divgrid">
+			<table id="grid"></table>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="module" src="/public/start.js"></script>
+</html>

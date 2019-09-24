@@ -1,0 +1,15 @@
+{
+  "name": "pathfinder",
+  "version": "1.0.0",
+  "description": "Path Finding Visualizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Pham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "requirejs": "^2.3.6"
+  }
+}
