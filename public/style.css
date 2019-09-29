@@ -16,3 +16,31 @@ table {
     margin: 0;
 }
 
+.navbar-light {
+    background-color: #e3f2fd;
+}
+
+#box {
+    background-color: green;
+    height: 3px;
+    width: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+#box2 {
+    background-color: red;
+    height: 3px;
+    width: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+#thetitle {
+    text-align: center;
+    padding: 50px;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+

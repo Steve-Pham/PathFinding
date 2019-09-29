@@ -7,7 +7,7 @@
 </head>
 	<body>
 		<div class="navbardiv">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default navbar-light">
 			  <div class="container-fluid">
 			    <div class="navbar-header">
 			      <a class="navbar-brand" href="#">PathFinding Visualization!</a>
@@ -17,13 +17,16 @@
 			      	<ul class="nav navbar-nav">
 						<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The Algorithms! <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li id="start-DFS"><a href="#">Depth-First Search</a></li>	
-							<li id="start-BFS"><a href="#">Breadth-First Search</a></li>	
-							<li id="start-Djikstra's"><a href="#">Djikstra's</a></li>	
+						<ul class="dropdown-menu" id="dropdown-value">
+							<li class="dropdown-item" id="start-DFS"><a href="#" >Depth-First Search</a></li>	
+							<li class="dropdown-item" id="start-BFS"><a href="#">Breadth-First Search</a></li>	
+							<!-- <li class="dropdown-item" id="start-Djikstra's"><a href="#">Djikstra's</a></li> -->
 						</ul>
 						</li>
 					</ul> 
+					<ul class="nav navbar-nav navbar-text navbar-center">
+						<span href="" id="thetitle">No Algorithm Chosen!</span>
+					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="mybuttons ">
 							<button id="search" type="button" class="btn btn-primary navbar-btn">Search!</button>

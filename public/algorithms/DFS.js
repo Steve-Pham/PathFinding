@@ -1,4 +1,4 @@
-function DFS(grid, start_row, start_col, end_row, end_col) {
+function DFS(grid, start_row, start_col, end_row, end_col, allNodes) {
     
     let startingNode = grid.getNode(start_col, start_row); // Get starting node
     let endingNode = grid.getNode(end_col, end_row); // Get ending node
@@ -26,7 +26,7 @@ function DFS(grid, start_row, start_col, end_row, end_col) {
             if (currentNeighbour.status) {
                 continue; 
             }
-
+            allNodes.push(currentNeighbour);
             stack.push(currentNeighbour); 
             currentNeighbour.status = true
 

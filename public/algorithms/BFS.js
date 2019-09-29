@@ -1,4 +1,4 @@
-function BFS(grid, start_row, start_col, end_row, end_col) {
+function BFS(grid, start_row, start_col, end_row, end_col, allNodes) {
 
     let startingNode = grid.getNode(start_col, start_row);
     let endingNode = grid.getNode(end_col, end_row);
@@ -25,10 +25,11 @@ function BFS(grid, start_row, start_col, end_row, end_col) {
             let currentNeighbour = neighbours[i]
 
             // If node was visited already 
-            if (currentNeighbour.status) {
+            if (currentNeighbour.status || currentNeighbour.blocked) {
                 continue; 
             }
-            
+            allNodes.push(currentNeighbour);
+
             queue.push(currentNeighbour);
             currentNeighbour.status = true 
 
@@ -41,6 +42,7 @@ function BFS(grid, start_row, start_col, end_row, end_col) {
 
 function getPath(node) {
     let path = [[node.x, node.y]];
+    let i = 0;
     while (node.parent) {
         node = node.parent
         path.push([node.x, node.y]);
