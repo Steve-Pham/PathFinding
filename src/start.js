@@ -291,6 +291,7 @@ function drawWall(currnode) {
 }
 */
 
+console.log('Hello');
 
 
 initialize(maze); // Make the grid

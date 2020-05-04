@@ -4,6 +4,7 @@
   "description": "Path Finding Visualizer",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist/js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steve Pham",
@@ -11,5 +12,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6"
   }
 }
