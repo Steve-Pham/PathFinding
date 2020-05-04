@@ -12,7 +12,6 @@
   "homepage": " https://steve-pham.github.io/PathFinding",
   "dependencies": {
     "express": "^4.17.1",
-    "gh-pages": "^2.2.0",
     "requirejs": "^2.3.6"
   },
   "devDependencies": {
