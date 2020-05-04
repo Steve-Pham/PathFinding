@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist/js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Steve Pham",
   "license": "ISC",
+  "homepage": " https://steve-pham.github.io/PathFinding",
   "dependencies": {
     "express": "^4.17.1",
+    "gh-pages": "^2.2.0",
     "requirejs": "^2.3.6"
   },
   "devDependencies": {
