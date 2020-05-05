@@ -4,12 +4,10 @@
   "description": "Path Finding Visualizer",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist/js",
-    "deploy": "gh-pages -d dist"
+    "build": "babel src -d dist/js"
   },
   "author": "Steve Pham",
   "license": "ISC",
-  "homepage": " https://steve-pham.github.io/PathFinding",
   "dependencies": {
     "express": "^4.17.1",
     "requirejs": "^2.3.6"

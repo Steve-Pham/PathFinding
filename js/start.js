@@ -42,7 +42,7 @@ function initialize(Grid) {
     let rows = Grid.rows;
     let cols = Grid.cols;
 
-    console.log(rows + ', ' + cols);
+    //console.log(rows + ', ' + cols);
 
     for (let i = 0; i < rows; i++) {
         let tr = document.createElement('TR');
@@ -198,11 +198,6 @@ function init() {
         container.addEventListener("dragenter", dragenter)
         container.addEventListener("dragleave", dragleave)
         container.addEventListener("drop", drop)
-        /*
-        container.addEventListener("click", ()=> {
-            drawWall(container);
-        })
-        */
     }
 
     // Event Listeners
@@ -278,29 +273,9 @@ function drop(e) {
         end_col = matrix[1];
     }
 }
-/*
-function drawWall(currnode) {
-    setSquareColour(currnode.id, 0, "#404040");
-    // Get the id
-    let matrix = currnode.id.split('-');
-    let curr_row = parseInt(matrix[0]);
-    let curr_col = parseInt(matrix[1]);
- 
-    let nodeToChange = maze.getNode(curr_row, curr_col);
-
-}
-*/
-
-console.log('Hello');
-
 
 initialize(maze); // Make the grid
 init(); // Initialize the event listners
-
-
-
-
-
 
 
 
